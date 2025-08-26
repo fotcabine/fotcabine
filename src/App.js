@@ -79,7 +79,7 @@ const limparFormulario = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl mb-6 text-laranja">A Fotcabine</h2>
           <p className="text-justify max-w-3xl mx-auto">
-            Há 11 anos no mercado a Fotcabine teve o privilégio de estas presente nos momentos mais emocionantes como casamentos, formaturas, 15 anos e eventos corporativos de vários tipos. Temos orgulho em dizer que nunca deixamos de cumprir nossos contratos. Com equipamentos tradicionais como a CABINE DE FOTOS, sofisticados como o ESPELHO MÁGICO e como não poderia faltar os modernos como PLATAFORMA ou MOBILEBOOTH, estamos sempre criando recordações para uma vida toda, pois levamos para sua festa Mais que uma lembrança!
+            Há 11 anos no mercado a Fotcabine teve o privilégio de estar presente nos momentos mais emocionantes como casamentos, formaturas, 15 anos e eventos corporativos de vários tipos. Temos orgulho em dizer que nunca deixamos de cumprir nossos contratos. Com equipamentos tradicionais como a CABINE DE FOTOS, sofisticados como o ESPELHO MÁGICO e como não poderia faltar os modernos como PLATAFORMA ou MOBILEBOOTH, estamos sempre criando recordações para uma vida toda, pois levamos para sua festa Mais que uma lembrança!
           </p>
         </div>
       </section>
