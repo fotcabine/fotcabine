@@ -57,13 +57,13 @@ const limparFormulario = () => {
           <div className="container mx-auto flex items-center justify-between">
             {/* Logo Centralizada */}
             <div className="logo-container">
-              <img src="/imagens/logo.png" alt="Fotocabine Logo" className="logo" />
+              <img src="/imagens/logo.png" alt="Logo" /> className="logo" />
             </div>
 
             {/* Menu de Navegação - Centralizado */}
             <nav>
               <ul className="nav-list">
-                <li><a href="#fotocabine" className="hover:text-white">A Fotocabine</a></li>
+                <li><a href="#fotocabine" className="hover:text-white">A Fotcabine</a></li>
                 <li><a href="#sobre" className="hover:text-white">Sobre Nós</a></li>
                 <li><a href="#equipamentos" className="hover:text-white">Equipamentos</a></li>
                 <li><a href="#galeria" className="hover:text-white">Galeria</a></li>
