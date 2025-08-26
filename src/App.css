@@ -16,8 +16,7 @@
 .logo {
   width: 100px; /* A logo ocupará 100% da largura da faixa */
   height: auto;    /* Mantém a proporção da imagem */
-  max-height: 80px; /* Aumenta a altura da logo, sem distorcer, ajustando para 80px */
-}
+  }
 
 /* Estilos do menu de navegação */
 .nav-list {
