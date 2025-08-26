@@ -252,7 +252,7 @@ const limparFormulario = () => {
                   required
                 >
                   <option value="">Selecione o tipo de evento</option>
-                  <option value="casamento">Casamento</option>
+                  <option value="Casamento">Casamento</option>
                   <option value="15 anos">15 anos</option>
                   <option value="Formatura">Formatura</option>
                   <option value="Corporativo">Corporativo</option>
@@ -272,6 +272,19 @@ const limparFormulario = () => {
                   required
                 />
               </div>
+            </div>
+
+            {/* Mensagem */}
+            <div className="mb-4">
+              <label htmlFor="mensagem" className="block text-left">Digite sua mensagem aqui</label>
+              <textarea
+                id="mensagem"
+                className="w-full p-2 mt-2 border border-gray-300 rounded"
+                placeholder="Sua mensagem"
+                value={mensagem}
+                onChange={(e) => setMensagem(e.target.value)}
+                required
+              />
             </div>
 
   {/* Botão de envio */}
