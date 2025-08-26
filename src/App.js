@@ -23,15 +23,7 @@ const limparFormulario = () => {
   setTipoEvento("");
   setNumeroConvidados("");
   setMensagem("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const msg = `Equipamento: ${equipamento}, Evento: ${tipoEvento}`;
-    setMensagem(msg);
-    alert(msg); // ou envio via WhatsApp/API
-  };
 };
-
   // Gera link do WhatsApp
   const gerarMensagemWhatsApp = () => {
     const mensagemFormatted =
@@ -237,16 +229,16 @@ const limparFormulario = () => {
                   id="equipamento"
                   className="w-full p-2 mt-2 border border-gray-300 rounded"
                   value={equipamento}
-                  onChange={(e) => setEquipamento(e.target.value)}
+                  onChange={(e) => setEquipamento(e.target.options[e.target.selectedIndex].text)}
                   required
                 >
                   <option value="">Selecione um equipamento</option>
-                  <option value="cabine_fotos">Cabine de Fotos</option>
-                  <option value="totem_retro">Tótem Retrô</option>
-                  <option value="espelho_magico">Espelho Mágico</option>
-                  <option value="plataforma_360">Plataforma 360</option>
-                  <option value="videobook">VídeoBook</option>
-                  <option value="mobilebooth">MobileBooth</option>
+                  <option value="Cabine de Fotos">Cabine de Fotos</option>
+                  <option value="Tótem Retrô">Tótem Retrô</option>
+                  <option value="Espelho Mágico">Espelho Mágico</option>
+                  <option value="Plataforma 360">Plataforma 360</option>
+                  <option value="VídeoBook">VídeoBook</option>
+                  <option value="MobileBooth">MobileBooth</option>
                 </select>
               </div>
 
@@ -256,15 +248,15 @@ const limparFormulario = () => {
                   id="tipo_evento"
                   className="w-full p-2 mt-2 border border-gray-300 rounded"
                   value={tipoEvento}
-                  onChange={(e) => setTipoEvento(e.target.value)}
+                  onChange={(e) => setTipoEvento(e.target.options[e.target.selectedIndex].text)}
                   required
                 >
                   <option value="">Selecione o tipo de evento</option>
                   <option value="casamento">Casamento</option>
-                  <option value="15anos">15 anos</option>
-                  <option value="formatura">Formatura</option>
-                  <option value="corporativo">Corporativo</option>
-                  <option value="outros">Outros</option>
+                  <option value="15 anos">15 anos</option>
+                  <option value="Formatura">Formatura</option>
+                  <option value="Corporativo">Corporativo</option>
+                  <option value="Outros">Outros</option>
                 </select>
               </div>
 
@@ -280,19 +272,6 @@ const limparFormulario = () => {
                   required
                 />
               </div>
-            </div>
-
-            {/* Mensagem */}
-            <div className="mb-4">
-              <label htmlFor="mensagem" className="block text-left">Digite sua mensagem aqui</label>
-              <textarea
-                id="mensagem"
-                className="w-full p-2 mt-2 border border-gray-300 rounded"
-                placeholder="Sua mensagem"
-                value={mensagem}
-                onChange={(e) => setMensagem(e.target.value)}
-                required
-              />
             </div>
 
   {/* Botão de envio */}
