@@ -1,0 +1,316 @@
+/* App.css */
+
+/* Estilo para a faixa laranja no cabeçalho */
+.header-bg-laranja {
+  background-color: #FF7F32; /* Laranja vibrante */
+  padding: 5px 0; /* Ajuste o padding conforme necessário */
+}
+
+/* Logo ajustada para a direita */
+.logo-container {
+  flex-grow: 1;
+  text-align: left; /* Ajuste para esquerda */
+  padding-left: 110px; /* Adiciona um espaçamento à esquerda para afastar da borda */
+}
+
+.logo {
+  max-width: 100%; /* A logo ocupará 100% da largura da faixa */
+  height: auto;    /* Mantém a proporção da imagem */
+  max-height: 80px; /* Aumenta a altura da logo, sem distorcer, ajustando para 80px */
+}
+
+/* Estilos do menu de navegação */
+.nav-list {
+display: flex;
+  justify-content: right;
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Efeito de hover */
+.nav-list a:hover {
+  color: #000; /* Altera para preto ao passar o mouse */
+}
+
+/* Seção Fotocabine */
+#fotocabine {
+  padding: 190px 0;
+  background-color: #ffffff; /* Cor de fundo branco para a seção Fotocabine */
+  color: #000000; /* Cor do texto preta */
+}
+
+#fotocabine h2 {
+  color: #FF4500; /* Título em laranja vibrante */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+    margin-left: 70px; /* Adiciona margem à esquerda para mover o título para a direita */
+}
+
+#fotocabine p {
+  text-align: justify; /* Justificar o texto */
+  max-width: 900px; /* Limitar a largura do parágrafo */
+  margin: 0 auto; /* Centralizar o parágrafo dentro do contêiner */
+  font-size: 1.5rem; /* Tamanho da fonte */
+  padding-left: 20px; /* Adiciona espaço à esquerda */
+  padding-right: 20px; /* Adiciona espaço à direita */
+}
+
+/* Seção Sobre */
+#sobre {
+  padding: 190px 0;
+  background-color: #030303; /* Fundo preto suave */
+  color: white;
+}
+
+#sobre h2 {
+  color: #FF4500; /* Título em laranja vibrante */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-left: 70px; /* Adiciona margem à esquerda para mover o título para a direita */
+}
+#sobre p {
+  text-align: justify; /* Justificar o texto */
+  max-width: 900px; /* Limitar a largura do parágrafo */
+  margin: 0 auto; /* Centralizar o parágrafo dentro do contêiner */
+  font-size: 1.5rem; /* Aumente o tamanho da fonte conforme necessário */
+  padding-left: 20px; /* Adiciona espaço à esquerda */
+  padding-right: 20px; /* Adiciona espaço à direita */
+}
+
+/* Seção Equipamentos */
+#equipamentos {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 60px 0; /* Espaçamento em cima e embaixo */
+}
+
+#equipamentos h2 {
+  color: #FF4500; /* Título laranja vibrante */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+    margin-left: 70px; /* Adiciona margem à esquerda para mover o título para a direita */
+}
+
+#equipamentos p {
+  font-size: 1.5rem;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#equipamentos .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
+  gap: 15px;
+  margin-top: 30px; /* Aumenta o espaço entre o texto e as imagens */
+}
+
+#equipamentos .grid img {
+  width: 40%; /* Reduzir a largura das imagens para 40% */
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto; /* Centralizando a imagem */
+}
+
+#equipamentos .grid div {
+  background-color: #f3f2f2;
+  padding: 15px; /* Menos padding nas caixas */
+  border-radius: 8px;
+  text-align: center;
+}
+
+#equipamentos .grid p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #131313; /* Cor preta vibrante */
+  text-align: center; /* Centraliza a descrição abaixo da imagem */
+  font-weight: bold; /* Deixa o texto mais chamativo */
+}
+
+/* Adicionar a cor laranja vibrante */
+.text-laranja {
+  color: #FF4500; /* Cor laranja vibrante */
+}
+
+/* Seção Galeria */
+#galeria {
+  background-color: #000000; /* Fundo preto vibrante */
+  padding: 40px 0; /* Espaçamento em cima e embaixo */
+  border: 2px solid #ffffff; /* Borda branca fina ao redor da seção */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+#galeria h2 {
+  color: #FF4500; /* Cor laranja vibrante para o título */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+    margin-left: 70px; /* Adiciona margem à esquerda para mover o título para a direita */
+}
+
+#galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 colunas por linha */
+  gap: 10px; /* Espaçamento entre as imagens */
+}
+
+#galeria .grid div {
+  background-color: #f4f4f4; /* Fundo claro para o item */
+  padding: 0; /* Remover o padding da div */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center;
+  position: relative; /* Para garantir o comportamento correto da imagem */
+  width: 100%; /* Garante que a largura da div será proporcional */
+  height: 0; /* Faz a altura ser calculada */
+  padding-bottom: 100%; /* Faz a altura igual à largura para torná-la quadrada */
+}
+
+#galeria .grid img {
+  position: absolute; /* Posiciona a imagem dentro da div */
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz a imagem ocupar 100% da largura da div */
+  height: 100%; /* Faz a imagem ocupar 100% da altura da div */
+  object-fit: cover; /* Faz com que a imagem ocupe o espaço sem distorcer */
+  border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+/* Estilo para a seção de contato */
+#contato {
+  padding: 20px 0;
+  background-color: #ffffff; /* Cor de fundo branco para a seção Fotocabine */
+  color: #000000; /* Cor do texto preta */
+}
+
+#contato h2 {
+  color: #FF4500; /* Título em laranja vibrante */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+    margin-left: 70px; /* Adiciona margem à esquerda para mover o título para a direita */
+  margin-top: -15px; /* Diminui o espaço entre a seção anterior e a seção de contato */
+
+  }
+#contato form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contato input, #contato textarea, #contato select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+  font-size: 1rem;
+}
+
+#contato textarea {
+  min-height: 150px;
+}
+
+#contato label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Caixa de mensagem */
+#contato .row {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os campos */
+  flex-wrap: wrap; /* Permite que os campos quebrem a linha em telas menores */
+}
+
+#contato .col {
+  flex: 1;
+  min-width: 220px; /* Garante que os campos não fiquem muito pequenos */
+}
+
+#contato button {
+  background-color: #FF7F32; /* Laranja vibrante */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%; /* O botão ocupa toda a largura */
+  transition: background-color 0.3s;
+}
+
+#contato button:hover {
+  background-color: #e06722; /* Tom mais escuro quando passa o mouse */
+}
+
+/* Rodapé com faixa laranja */
+footer {
+  background-color: #FF7F32; /* Faixa laranja */
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens à esquerda e à direita */
+  align-items: center;
+}
+
+footer .social-links {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links de redes sociais */
+}
+
+footer .social-links a {
+  margin: 0 50px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: black;
+}
+
+footer .copyright {
+  text-align: right;
+  margin-right: 40px; /* Adiciona um espaço à direita para afastar dos links */
+}
+/* App.css */
+
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366; /* Cor verde do WhatsApp */
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cor mais escura do WhatsApp ao passar o mouse */
+  cursor: pointer;
+}
+
+/* Estilo para o ícone dentro do botão */
+.whatsapp-button i0 {
+  margin-right: 10px;
+}
