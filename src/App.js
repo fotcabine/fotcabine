@@ -23,6 +23,13 @@ const limparFormulario = () => {
   setTipoEvento("");
   setNumeroConvidados("");
   setMensagem("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const msg = `Equipamento: ${equipamento}, Evento: ${tipoEvento}`;
+    setMensagem(msg);
+    alert(msg); // ou envio via WhatsApp/API
+  };
 };
 
   // Gera link do WhatsApp
@@ -230,7 +237,7 @@ const limparFormulario = () => {
                   id="equipamento"
                   className="w-full p-2 mt-2 border border-gray-300 rounded"
                   value={equipamento}
-                  onChange={(e) => setEquipamento(e.target.options[e.target.selectedIndex].text)}
+                  onChange={(e) => setEquipamento(e.target.value)}
                   required
                 >
                   <option value="">Selecione um equipamento</option>
@@ -249,7 +256,7 @@ const limparFormulario = () => {
                   id="tipo_evento"
                   className="w-full p-2 mt-2 border border-gray-300 rounded"
                   value={tipoEvento}
-                  onChange={(e) => setTipoEvento(e.target.options[e.target.selectedIndex].text)}
+                  onChange={(e) => setTipoEvento(e.target.value)}
                   required
                 >
                   <option value="">Selecione o tipo de evento</option>
